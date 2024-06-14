@@ -1,4 +1,5 @@
 "use client"
+import Header from '@/app/components/Header';
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -6,6 +7,7 @@ const page = () => {
     const [slider, setSlider] = useState(50);
   return (
     <div>
+        <Header />
         <div className="container">
             <div className="top py-4 text-[13px] flex gap-[10px] font-normal">
                 <Link href='/' className='underline-none text-[#191C1F]'>kemea</Link>

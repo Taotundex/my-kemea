@@ -8,7 +8,7 @@ const page = () => {
     <div className='home'>
       {/* <div className="container"> */}
         <main className="font-primary text-text-color">
-            {/* <Header /> */}
+            <Header />
             <div className="flex flex-col gap-[15px] py-[20px] container">
                 <h2 className="text-[35px] text-[#191C1F] font-medium font-font-spring" >Excepetional Properties</h2>
             </div>

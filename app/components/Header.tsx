@@ -65,7 +65,7 @@ const Header = () => {
                   New Projects
                 </MenubarItem>
               </Link>
-              <Link href="/buy/exceptional-products">
+              <Link href="/buy/exceptional-properties">
                 <MenubarItem className="font-normal relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:text-primary hover:underline cursor-pointer">
                   Exceptional properties
                 </MenubarItem>
@@ -97,7 +97,7 @@ const Header = () => {
                   Short Term rent
                 </MenubarItem>
               </Link>
-              <Link href='/rent/exceptional-products'>
+              <Link href='/rent/exceptional-properties'>
                 <MenubarItem className="font-normal relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:text-primary hover:underline cursor-pointer">
                   Exceptional properties
                 </MenubarItem>

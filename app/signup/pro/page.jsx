@@ -11,7 +11,7 @@ const page = () => {
       <div className="grid grid-cols-2 gap-0">
         <div className="h-screen">
             {/* <div className="left"> */}
-                <img src="../images/signup-img.png" className='object-cover' alt="" />
+                <img src="/images/signup-img.png" className='object-cover' alt="" />
             {/* </div> */}
         </div>
         <div className="h-screen px-[100px] py-[18px] overflow-y-scroll">

@@ -4,6 +4,7 @@ import React from 'react'
 import dynamic from 'next/dynamic'; 
 import CircularProgress from '../../components/CircularProgress';
 import ToggleButton from '../../components/ToggleButton';
+import Header from '@/app/components/Header';
 
 // const MapComponent = dynamic(() => import('../../components/MapComponent'), { ssr: false }); // Load MapComponent dynamically with no SSR
 
@@ -23,6 +24,7 @@ const page = () => {
 //   const estimatedMonthlyPayment = 2756; 
   return (
     <div>
+      <Header />
       <div className="container">
         <div className="head py-4">
           <h2 className='text-[#191C1F] font-medium lg:text-3xl md:text-2xl text-[24px] py-2'>Cottage - Eliezer Yaffe St.</h2>
@@ -30,11 +32,11 @@ const page = () => {
             <div className='lg:text-[17px] text-sm text-[#191C1F] font-normal'>· Eliezer Yaffe St., Ra’anana District, Israel </div>
             <div className="flex items-center lg:gap-6 gap-3 text-[#1D234E] font-normal lg:text-base text-sm">
               <p className='flex items-center gap-[2px]'>
-                <img src="../../images/desc-heart.svg" width='18px' height='18px' alt="" />
+                <img src="/images/desc-heart.svg" width='18px' height='18px' alt="" />
                 Save
               </p>
               <p className='flex items-center gap-[2px]'>
-                <img src="../../images/share.svg" width='12px' height='12px' alt="" />
+                <img src="/images/share.svg" width='12px' height='12px' alt="" />
                 Share
               </p>
             </div>
@@ -45,25 +47,25 @@ const page = () => {
           <div className="grid grid-cols-2 lg:gap-[14px] md:gap-[10px] gap-[8px]">
             <div className="first">
               <div className="img">
-                <img src="../../images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
+                <img src="/images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
               </div>
             </div>
             <div className="second">
               <div className="grid grid-cols-2 lg:gap-[14px] md:gap-[10px] gap-[8px]">
                 <div className="grid grid-cols-1 lg:gap-[14px] md:gap-[10px] gap-[8px]">
                   <div className="second1 img">
-                    <img src="../../images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
+                    <img src="/images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
                   </div>
                   <div className="second2 img">
-                    <img src="../../images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
+                    <img src="/images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 lg:gap-[14px] md:gap-[10px] gap-[8px]">
                   <div className="second1 img">
-                    <img src="../../images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
+                    <img src="/images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
                   </div>
                   <div className="second2 img">
-                    <img src="../../images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
+                    <img src="/images/Group1.png" width='100%' alt="image" className='rounded-[15px]' />
                   </div>
                 </div>
               </div>
@@ -89,15 +91,15 @@ const page = () => {
                 <p>Eliezer Yaffe Street, Ra’anana District, Israel</p>
                 <div className="btns flex gap-[10px] my-6">
                 <button className='btn bg-white border border-[#191C1F] w-[128px] h-[45px] rounded-[20px] text-[15px] font-normal flex items-center justify-center gap-3 text-[#191C1F]'>
-                    <img src="../../images/home.svg" width='18px' height='15px' alt="" />
+                    <img src="/images/home.svg" width='18px' height='15px' alt="" />
                     <p>530 m<sup>2</sup></p>
                 </button>
                 <button className='btn bg-white border border-[#191C1F] w-[128px] h-[45px] rounded-[20px] text-[15px] font-normal flex items-center justify-center gap-3 text-[#191C1F]'>
-                    <img src="../../images/rooms.svg" width='19px' height='17px' alt="" />
+                    <img src="/images/rooms.svg" width='19px' height='17px' alt="" />
                     <p>7 Rooms</p>
                 </button>
                 <button className='btn bg-white border border-[#191C1F] w-[128px] h-[45px] rounded-[20px] text-[15px] font-normal flex items-center justify-center gap-3 text-[#191C1F]'>
-                    <img src="../../images/baths.svg" width='15px' height='18px' alt="" />
+                    <img src="/images/baths.svg" width='15px' height='18px' alt="" />
                     <p>4 Baths</p>
                 </button>
                 </div>
@@ -145,29 +147,29 @@ const page = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-[50px] md:gap-10 gap-[20px]">
                     <div className="single">
                     <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/elevator.svg" alt="" />Elevators
+                        <img src="/images/elevator.svg" alt="" />Elevators
                     </button>
                     <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/furniture.svg" alt="" />Furnitures included
+                        <img src="/images/furniture.svg" alt="" />Furnitures included
                     </button>
                     <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/heater.svg" alt="" />Water heater
-                    </button>
-                    </div>
-                    <div className="single">
-                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/renovated.svg" alt="" />Renovated
-                    </button>
-                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/kitchen.svg" alt="" />Kosher kitchen
-                    </button>
-                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/mazgan.svg" alt="" />Personal Mazgan
+                        <img src="/images/heater.svg" alt="" />Water heater
                     </button>
                     </div>
                     <div className="single">
                     <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
-                        <img src="../../images/storage.svg" alt="" />Storage
+                        <img src="/images/renovated.svg" alt="" />Renovated
+                    </button>
+                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
+                        <img src="/images/kitchen.svg" alt="" />Kosher kitchen
+                    </button>
+                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
+                        <img src="/images/mazgan.svg" alt="" />Personal Mazgan
+                    </button>
+                    </div>
+                    <div className="single">
+                    <button className="btn lg:my-5 md:my-4 my-3 flex items-center gap-[15px] border-2 border-[#E2E8F0] rounded-[20px] text-[#191C1FCC] lg:text-sm text-xs font-normal px-6 bg-transparent w-full h-[46px]">
+                        <img src="/images/storage.svg" alt="" />Storage
                     </button>
                     </div>
                 </div>
@@ -182,12 +184,12 @@ const page = () => {
                   <small className='text-xs font-normal'>As early as today 11:00 am</small>
                 </button>
                 <button className='bg-white text-[#191C1F] rounded-full border border-[#191C1F] flex items-center justify-center gap-[10px] w-full py-[10px]'>
-                  <img src="../../images/call2.svg" alt="" /> Show phone number
+                  <img src="/images/call2.svg" alt="" /> Show phone number
                 </button>
               </div>
               <div className="tour shadow p-[25px] flex flex-col gap-[12px] rounded-[20px]">
                 <div className="flex items-center gap-[15px] text-[#191C1F] text-xl font-normal">
-                  <img src="../../images/Remax-sm.png" alt="" />
+                  <img src="/images/Remax-sm.png" alt="" />
                   RE/MAX Agency
                 </div>
                 <form action="" className="my-3">

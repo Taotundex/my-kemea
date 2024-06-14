@@ -16,7 +16,7 @@ import { FaRegUser } from "react-icons/fa6";
 import { FaUserCircle } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 
-const Header = () => {
+const HeaderUser = () => {
   return (
     <div className="px-10 laptop:px-20 text-[15px] font-normal border-[#75808A] py-3 items-center border-b-[0.1px]">
       <div className="font-primary flex flex-row items-center lg:justify-normal">
@@ -70,7 +70,7 @@ const Header = () => {
                   New Projects
                 </MenubarItem>
               </Link>
-              <Link href="">
+              <Link href="buy/exceptional-properties">
                 <MenubarItem className="font-normal relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:text-primary hover:underline cursor-pointer">
                   Exceptional properties
                 </MenubarItem>
@@ -102,7 +102,7 @@ const Header = () => {
                   Short Term rent
                 </MenubarItem>
               </Link>
-              <Link href=''>
+              <Link href='/rent/exceptional-properties'>
                 <MenubarItem className="font-normal relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:text-primary hover:underline cursor-pointer">
                   Exceptional properties
                 </MenubarItem>
@@ -204,4 +204,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderUser;
