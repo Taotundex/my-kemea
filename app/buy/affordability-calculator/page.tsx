@@ -1,4 +1,5 @@
 "use client"
+import FooterBg from '@/app/components/FooterBg';
 import Header from '@/app/components/Header';
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -242,6 +243,7 @@ const page = () => {
                 </div>
             </div>
         </div>
+        <FooterBg />
     </div>
   )
 }

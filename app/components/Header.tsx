@@ -13,6 +13,115 @@ import Link from "next/link";
 
 const Header = () => {
   return (
+    // <div className="w-full bg-white border-b-[0.2px] border-[#75808A]">
+    //   <div className="navbar bg-base-100 container">
+    //     <div className="navbar-start">
+    //       <div className="dropdown">
+    //         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+    //           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    //         </div>
+    //         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[300px]">
+    //           <li>
+    //             <a>Buy</a>
+    //             <ul className="p-2">
+    //               <li><Link href='/'>Home for sales</Link></li>
+    //               <li><Link href='/buy/new-project'>New Projects</Link></li>
+    //               <li><Link href='/buy/exceptional-properties'>Exceptional properties</Link></li>
+    //               <li><Link href='/kemea'>My kemea - assisted search services</Link></li>
+    //               <li><Link href='/affordability-calculator'>Affordability calculator</Link></li>
+    //             </ul>
+    //           </li>
+    //           <li>
+    //             <a>Rent</a>
+    //             <ul className="p-2">
+    //               <li><Link href='/'>Home for rent</Link></li>
+    //               <li><Link href='/buy/new-project'>Short Term rent</Link></li>
+    //               <li><Link href='/buy/exceptional-properties'>Exceptional properties</Link></li>
+    //               <li><Link href='/kemea'>My kemea - assisted search services</Link></li>
+    //             </ul>
+    //           </li>
+    //           <li><Link href='/kemea'>My kemea</Link></li>
+    //           <li>
+    //             <a>Promote with us</a>
+    //             <div className="grid grid-cols-2">
+    //               <ul className="p-2">
+    //                 <h5>Landlords</h5>
+    //                 <li><Link href='/promote/sell-out'>Sell out</Link></li>
+    //                 <li><Link href='/promote/rent-out'>Rent out</Link></li>
+    //               </ul>
+    //               <ul className="p-2">
+    //                 <h5>Real Estate/Professionals</h5>
+    //                 <li><Link href='/signup/pro'>Create a free account</Link></li>
+    //               </ul>
+    //             </div>
+    //           </li>
+    //         </ul>
+    //       </div>
+    //       <div className="flex gap-1 text-xl">
+    //         <Image
+    //             src="/kemea-logo.svg"
+    //             alt="Vercel Logo"
+    //             className="dark:invert mr-2"
+    //             width={20}
+    //             height={20}
+    //             priority
+    //         />
+    //         <div className="font-medium text-[20px] text-[#1D234E]">Kemea</div>
+    //       </div>
+    //     </div>
+    //     <div className="navbar-center hidden lg:flex">
+    //       <ul className="menu menu-horizontal px-1">
+    //         <li>
+    //           <details>
+    //             <summary>Buy</summary>
+    //             <ul className="p-2 w-[322px]">
+    //               <li><Link href='/'>Home for sales</Link></li>
+    //               <li><Link href='/buy/new-project'>New Projects</Link></li>
+    //               <li><Link href='/buy/exceptional-properties'>Exceptional properties</Link></li>
+    //               <li><Link href='/kemea'>My kemea - assisted search services</Link></li>
+    //               <li><Link href='/affordability-calculator'>Affordability calculator</Link></li>
+    //             </ul>
+    //           </details>
+    //         </li>
+    //         <li>
+    //           <details>
+    //             <summary>Rent</summary>
+    //             <ul className="p-2 w-[322px]">
+    //               <li><Link href='/'>Home for rent</Link></li>
+    //               <li><Link href='/buy/new-project'>Short Term rent</Link></li>
+    //               <li><Link href='/buy/exceptional-properties'>Exceptional properties</Link></li>
+    //               <li><Link href='/kemea'>My kemea - assisted search services</Link></li>
+    //             </ul>
+    //           </details>
+    //         </li>
+    //         <li><Link href='/kemea'>My kemea</Link></li>
+    //         <li>
+    //           <details>
+    //             <summary>Promote with us</summary>
+    //               <ul className="p-2 grid grid-cols-2 w-[300px]">
+    //                 <li>
+    //                   <b>Landlords</b>
+    //                   <p><Link href='/promote/sell-out'>Sell out</Link></p>
+    //                   <p><Link href='/promote/rent-out'>Rent out</Link></p>
+    //                 </li>
+    //                 <li>
+    //                   <b>Real Estate/Professionals</b>
+    //                   <p><Link href='/signup/pro'>Create a free account</Link></p>
+    //                 </li>
+    //               </ul>
+    //             </details>
+    //           <a></a>
+    //         </li>
+    //       </ul>
+    //     </div>
+    //     <div className="navbar-end">
+    //       <a className="btn">Button</a>
+    //     </div>
+    //   </div>
+    // </div>
+
+
+
     <div className="px-10 laptop:px-20 text-[15px] font-normal border-[#75808A] py-3 items-center border-b-[0.1px]">
       <div className="font-primary flex flex-row items-center lg:justify-normal">
         <div className="flex items-center space-x-5">

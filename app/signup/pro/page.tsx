@@ -26,23 +26,23 @@ const page = () => {
                     </div>
 
                     <form action="/pro/" className='w-[400px] mx-auto p-5 mt-4'>
-                        <div className="input my-3">
+                        <div className="inputs my-3">
                             <label htmlFor="">First name</label>
                             <input className='w-full my-1 py-[10px] px-[15px] border border-[#E2E8F0] rounded-[20px] bg-white outline-none' type="text" name="firstname" id="firstname" placeholder='Juliette' />
                         </div>
-                        <div className="input my-3">
+                        <div className="inputs my-3">
                             <label htmlFor="">Last name</label>
                             <input className='w-full my-1 py-[10px] px-[15px] border border-[#E2E8F0] rounded-[20px] bg-white outline-none' type="text" name="lastname" id="lastname" placeholder='Dupont' />
                         </div>
-                        <div className="input my-3">
+                        <div className="inputs my-3">
                             <label htmlFor="">E-mail</label>
                             <input className='w-full my-1 py-[10px] px-[15px] border border-[#E2E8F0] rounded-[20px] bg-white outline-none' type="email" name="email" id="email" placeholder='Ex: juliette.dupont@mail.com' />
                         </div>
-                        <div className="input my-3">
+                        <div className="inputs my-3">
                             <label htmlFor="">Password</label>
                             <input className='w-full my-1 py-[10px] px-[15px] border border-[#E2E8F0] rounded-[20px] bg-white outline-none' type="password" name="password" id="password" placeholder='............' />
                         </div>
-                        <div className="input my-3">
+                        <div className="inputs my-3">
                             <label htmlFor="">Phone number</label>
                             {/* <div className="flex items-center w-full"> */}
                                 <PhoneInputComponent value={phone} onChange={setPhone} />

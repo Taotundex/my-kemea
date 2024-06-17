@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { IoCallOutline } from 'react-icons/io5'
 import { TiMessages } from "react-icons/ti";
 import Header from '../components/Header';
+import FooterBg from '../components/FooterBg';
 
 const page = () => {
   const [activeButton, setActiveButton] = useState(1);
@@ -521,6 +522,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <FooterBg />
     </div>
   )
 }
