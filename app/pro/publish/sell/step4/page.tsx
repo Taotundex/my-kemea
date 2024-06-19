@@ -1,4 +1,4 @@
-import HeaderPublish from '@/app/components/HeaderPublish'
+import HeaderPublish from '@/app/my-components/HeaderPublish'
 import Link from 'next/link'
 import React from 'react'
 import { FaCirclePlus } from 'react-icons/fa6'

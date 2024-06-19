@@ -1,5 +1,5 @@
 "use client";
-import HeaderPro from '@/app/components/HeaderPro';
+import HeaderPro from '@/app/my-components/HeaderPro';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoCallOutline } from 'react-icons/io5'

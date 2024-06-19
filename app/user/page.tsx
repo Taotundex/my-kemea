@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import HeaderUser from "../components/HeaderUser";
-import PropertyView from "../components/PropertyView";
+import Footer from "../my-components/Footer";
+import HeaderUser from "../my-components/HeaderUser";
+import PropertyView from "../my-components/PropertyView";
 
 export default function Home() {
   return (

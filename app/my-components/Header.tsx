@@ -122,11 +122,11 @@ const Header = () => {
 
 
 
-    <div className="px-10 laptop:px-20 text-[15px] font-normal border-[#75808A] py-3 items-center border-b-[0.1px]">
-      <div className="font-primary flex flex-row items-center lg:justify-normal">
+    <div className="text-[15px] font-normal border-[#75808A] py-3 items-center border-b-[0.1px]">
+      <div className="font-primary flex flex-row items-center lg:justify-normal container">
         <div className="flex items-center space-x-5">
           <label
-            for="my-drawer-3"
+            htmlFor="my-drawer-3"
             aria-label="open sidebar"
             className="tablet:hidden border p-2 px-2 rounded-md cursor-pointer border-indigo-50 mr-5 btn btn-square btn-ghost"
           >

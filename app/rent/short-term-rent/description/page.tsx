@@ -2,11 +2,11 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import dynamic from 'next/dynamic'; 
-import CircularProgress from '../../../components/CircularProgress';
-import ToggleButton from '../../../components/ToggleButton';
-import Header from '@/app/components/Header';
+import CircularProgress from '../../../my-components/CircularProgress';
+import ToggleButton from '../../../my-components/ToggleButton';
+import Header from '@/app/my-components/Header';
 
-const MapComponent = dynamic(() => import('../../../components/MapComponent'), { ssr: false }); // Load MapComponent dynamically with no SSR
+const MapComponent = dynamic(() => import('../../../my-components/MapComponent'), { ssr: false }); // Load MapComponent dynamically with no SSR
 
 const page = () => {
   // const [activeButton, setActiveButton] = useState(1);

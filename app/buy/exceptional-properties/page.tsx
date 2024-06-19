@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Header from '../../components/Header'
+import Header from '../../my-components/Header'
 import { IoCallOutline } from 'react-icons/io5'
 
 const page = () => {
@@ -21,7 +21,7 @@ const page = () => {
                         <img src="/images/Group1.png" width='100%' className='rounded-xl size-full' alt="" />
                       </Link>
                       <div className="reaction w-full px-5 absolute top-4 left-0 flex justify-between z-100">
-                      <small className='text-[#191C1F] bg-white rounded-xl px-3 py-1.5 text-xs'>Off Market</small>
+                        <small className='text-[#191C1F] bg-white rounded-xl px-3 py-1.5 text-xs'>Off Market</small>
                         <img src="/images/heart.svg" width='21px' height='18px' alt="" />
                       </div>
                     </div>

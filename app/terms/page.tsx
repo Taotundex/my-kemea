@@ -1,11 +1,10 @@
 "use client"
-import FooterBg from '@/app/components/FooterBg';
-import Header from '@/app/components/Header';
+import FooterBg from '@/app/my-components/FooterBg';
+import Header from '@/app/my-components/Header';
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 
 const page = () => {
-    const [slider, setSlider] = useState(50);
   return (
     <div>
         <Header />

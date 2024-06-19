@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderPro from '../components/HeaderPro'
+import HeaderPro from '../my-components/HeaderPro'
 import { LuPlus } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
 import { PiHouseFill } from 'react-icons/pi';

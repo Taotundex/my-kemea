@@ -1,5 +1,5 @@
 'use client';
-import HeaderPublish from '@/app/components/HeaderPublish'
+import HeaderPublish from '@/app/my-components/HeaderPublish'
 // import PhoneInputComponent from '@/app/components/PhoneInput'
 import Link from 'next/link'
 import React, { useState } from "react";

@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import dynamic from 'next/dynamic'; 
-import Header from '@/app/components/Header';
+import Header from '@/app/my-components/Header';
 
 const MapComponent = dynamic(() => import('@/app/components/MapComponent'), { ssr: false }); // Load MapComponent dynamically with no SSR
 

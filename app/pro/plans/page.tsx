@@ -1,4 +1,4 @@
-import HeaderPro from '@/app/components/HeaderPro'
+import HeaderPro from '@/app/my-components/HeaderPro'
 import React from 'react'
 
 const page = () => {

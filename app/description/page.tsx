@@ -2,9 +2,9 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import dynamic from 'next/dynamic'; 
-import CircularProgress from '@/app/components/CircularProgress';
-import ToggleButton from '@/app/components/ToggleButton';
-import Header from '../components/Header';
+import CircularProgress from '@/app/my-components/CircularProgress';
+import ToggleButton from '@/app/my-components/ToggleButton';
+import Header from '../my-components/Header';
 
 const MapComponent = dynamic(() => import('@/app/components/MapComponent'), { ssr: false }); // Load MapComponent dynamically with no SSR
 

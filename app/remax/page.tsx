@@ -3,8 +3,8 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoCallOutline } from 'react-icons/io5'
 import { TiMessages } from "react-icons/ti";
-import Header from '../components/Header';
-import FooterBg from '../components/FooterBg';
+import Header from '../my-components/Header';
+import FooterBg from '../my-components/FooterBg';
 
 const page = () => {
   const [activeButton, setActiveButton] = useState(1);
@@ -42,7 +42,7 @@ const page = () => {
                 <span className='col-span-1'>- 9:30 - 19:00</span>
             </div>
           </div>
-          <div className="lg:col-span-3 md:grid-cols-4 col-span-3 flex flex-col gap-[15px] lg:ml-10 ml-0 lg:text-left text-center w-100">
+          <div className="lg:col-span-3 md:grid-cols-4 col-span-3 flex flex-col gap-[15px] lg:ml-10 ml-0 lg:text-left text-center w-full">
             <Link href='' className='flex items-center gap-3 text-[#1D234E] text-sm font-normal underline underline-offset-[3px]'>
               <img src="/images/link.svg" alt="" />See their website
             </Link>
@@ -61,20 +61,44 @@ const page = () => {
               <form action="">
                 <div className="inputs my-3">
                   <label htmlFor="" className='text-[16px]'>Kind of property</label>
-                  <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white'></select>
+                  <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white px-3'>
+                    <option value="">Apartment</option>
+                    <option value="">Apartment</option>
+                    <option value="">Apartment</option>
+                  </select>
                 </div>
                 <div className="inputs my-3">
                   <label htmlFor="" className='text-[16px]'>Price</label>
                   <div className="grid grid-cols-2 gap-3">
-                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white'></select>
-                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white'></select>
+                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white px-3'>
+                      <option disabled selected>Min</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white px-3'>
+                      <option disabled selected>Max</option>
+                      <option value="">10</option>
+                      <option value="">20</option>
+                      <option value="">30</option>
+                    </select>
                   </div>
                 </div>
                 <div className="inputs my-3">
                   <label htmlFor="" className='text-[16px]'>Surface</label>
                   <div className="grid grid-cols-2 gap-3">
-                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white'></select>
-                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white'></select>
+                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white px-3'>
+                      <option disabled selected>Min</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                    <select name="" id="" className='w-full h-[45px] border border-[#E2E8F0] rounded-[10px] outline-none bg-white px-3'>
+                      <option disabled selected>Max</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
                   </div>
                 </div>
                 <div className="inputs my-3">
@@ -227,7 +251,12 @@ const page = () => {
                     Our Agents
                   </div>
                 </div> 
-                <select name="" id="" className='rounded-full border border-[#E9ECEF] h-[30px] w-[120px] outline-none bg-white'></select>
+                <select className="w-[120px] bg-white border border-[#E9ECEF] text-[#191C1F] outline-none rounded-full px-3 h-[30px]">
+                  <option disabled selected>Default</option>
+                  <option value='Date' className="leading-relaxed">Date</option>
+                  <option value='Ascending Price' className="leading-relaxed">Ascending Price</option>
+                  <option value='Descending Price' className="leading-relaxed">Descending Price</option>
+                </select>
               </div>
 
               <div className="py-[30px]">
@@ -236,7 +265,7 @@ const page = () => {
                         <div className="card">
                             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 border border-[#DDDDDD] rounded-[15px]">
                                 <div className="col-span-1">
-                                    <img src="/images/detailed.png" width='100%' className='h-[280px] object-cover rounded-tl-[15px] rounded-bl-[15px]' alt="" />
+                                    <img src="/images/detailed.png" width='100%' className='h-full object-cover rounded-tl-[15px] rounded-bl-[15px]' alt="" />
                                 </div>
                                 <div className="col-span-2 text-[#191C1F] h-[100%] relative">
                                     <div className="py-3 px-[24px] flex flex-col gap-4">
@@ -247,15 +276,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -282,15 +311,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -321,15 +350,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -356,15 +385,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -395,15 +424,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -430,15 +459,15 @@ const page = () => {
                                             <span>5 bdr.</span>
                                             <span>5 baths</span>
                                         </div>
-                                        <p>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
+                                        <p className='lg:h-full md:h-full h-[150px]'>Beautiful and spacious townhouse in a building of 2 houses, to reform, with many possibilities, located in one of the main and widest streets</p>
                                     </div>
                                     <div className="py-3 px-[24px] flex justify-between items-center w-full border-t border-[#E5E6E1] rounded-br-[15px] bg-white absolute bottom-0 left-0">
                                         <div className="flex gap-3">
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <IoCallOutline />
                                                 See the phone number
                                             </div>
-                                            <div className="flex gap-2">
+                                            <div className="flex gap-2 items-center">
                                                 <TiMessages />
                                                 Contact
                                             </div>
@@ -455,7 +484,7 @@ const page = () => {
                 )}
                 {activeButton === 4 && (
                   <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 lg:gap-6 md:gap-4 gap-2">
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>
@@ -465,7 +494,7 @@ const page = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>
@@ -475,7 +504,7 @@ const page = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>
@@ -485,7 +514,7 @@ const page = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>
@@ -495,7 +524,7 @@ const page = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>
@@ -505,7 +534,7 @@ const page = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="card flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
+                    <div className="cards flex items-center gap-[10px] bg-white border border-[#DDDDDD] px-[15px] py-3 rounded-[20px]">
                       <img src="/images/photo.png" width='75px' height='75px' className='rounded-full p-1 border-2 border-[#0666EB]' alt="" />
                       <div className="flex flex-col">
                         <h3 className='text-[#0A1629] font-semibold text-base'>Laure Levy</h3>

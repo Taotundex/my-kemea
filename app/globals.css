@@ -108,6 +108,8 @@
 .container {
   width: 1285px !important;
   margin: 0 auto;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .content{

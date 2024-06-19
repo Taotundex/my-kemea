@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../my-components/Header";
 import Link from "next/link";
 import "../globals.css";
 import "tailwindcss/tailwind.css";

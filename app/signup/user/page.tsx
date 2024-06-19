@@ -12,7 +12,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import PhoneInputComponent from "@/app/components/PhoneInput";
+import PhoneInputComponent from "@/app/my-components/PhoneInput";
 
 const page = () => {
   const [phone, setPhone] = useState("");

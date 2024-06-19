@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-import PhoneInputComponent from '../../components/PhoneInput';
+import PhoneInputComponent from '../../my-components/PhoneInput';
 import './page.css'
 
 const page = () => {

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoCallOutline } from 'react-icons/io5'
 import './page.css'
-import Header from '../components/Header';
+import Header from '../my-components/Header';
 
 const page = () => {
   const [activeButton, setActiveButton] = useState(1);
